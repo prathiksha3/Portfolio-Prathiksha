@@ -617,7 +617,7 @@ section{
   justify-content: center; /* Center the grid items horizontally */
   gap: 30px; /* Add some space between grid items */
   width: 100%;
-  margin-left: 200px;
+  margin-left: 400px;
 }
 .row{
   position: relative;
@@ -688,8 +688,8 @@ section{
   font-size: 20px;
   line-height: 1.4;
   margin-bottom: 4rem;
-  margin-top: 400px;
-  margin-left: 200px;
+  margin-top: 600px;
+  margin-left: 600px;
   transition: transform 0.5s;
 }
 .container3:hover{
@@ -784,7 +784,7 @@ section{
   line-height: 1.4;
   margin-bottom: 4rem;
   margin-top: 100px;
-  margin-left: 400px;
+  margin-left: 800px;
   transition: transform 0.5s;
 }
 .container4:hover{
