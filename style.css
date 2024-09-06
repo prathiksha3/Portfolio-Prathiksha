@@ -842,44 +842,55 @@ section{
     transform: translateY(0); /* End at the original position */
   }
 }
+
 /* Mobile View (up to 767px) */
 @media (max-width: 767px) {
+  body {
+    font-size: 16px; /* Adjust font size for readability on small screens */
+  }
+
   .header {
     padding: 10px;
+    text-align: center;
   }
   
   .logo {
     font-size: 20px;
+    margin-bottom: 10px;
   }
   
   .navbar {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .navbar a {
-    font-size: 20px;
+    font-size: 18px;
     margin: 10px 0;
   }
 
   .home {
     padding: 70px 5%;
     background-size: cover;
+    text-align: center;
   }
 
   .profile-image {
-    width: 300px; /* Adjusted size for mobile */
-    height: 300px;
-    margin-right: 0;
-    float: none;
+    width: 100%;
+    height: auto;
+    max-width: 300px; /* Limit size to fit mobile screens */
+    margin: 0 auto;
+    display: block;
   }
 
   .home-content h1 {
-    font-size: 36px;
+    font-size: 28px; /* Adjusted for readability */
+    margin: 10px 0;
   }
 
   .home-content p {
-    font-size: 18px;
+    font-size: 16px; /* Adjusted for readability */
+    margin: 0 10px;
   }
 
   .about {
@@ -890,7 +901,7 @@ section{
   .about-img img {
     width: 100%; /* Full width for mobile */
     height: auto;
-    margin-left: 0;
+    margin: 0;
   }
 
   .portfolio-content {
@@ -898,73 +909,34 @@ section{
   }
 
   .container, .container1, .container3, .container4 {
-    padding: 30px; /* Reduce padding for mobile */
-    margin-left: 0;
+    padding: 20px; /* Reduced padding for mobile */
+    margin: 0;
   }
 
   .radial-bar {
-    width: 120px;
-    height: 120px;
+    width: 100px; /* Adjusted size for mobile */
+    height: 100px;
   }
 
   .progress-line span {
-    height: 5px;
+    height: 4px;
   }
 
   .contact-links {
     flex-direction: column;
     align-items: center;
   }
-}
 
-/* Laptop View (between 768px and 1024px) */
-@media (min-width: 768px) and (max-width: 1024px) {
-  .header {
-    padding: 15px;
+  .contact-links a {
+    margin: 5px 0;
   }
 
-  .logo {
-    font-size: 22px;
+  /* Additional adjustments */
+  .about-img {
+    margin: 0 auto;
   }
 
-  .navbar a {
-    font-size: 22px;
-  }
-
-  .home {
-    padding: 70px 7%;
-  }
-
-  .profile-image {
-    width: 400px; /* Adjusted size for tablets and smaller laptops */
-    height: 400px;
-  }
-
-  .home-content h1 {
-    font-size: 46px;
-  }
-
-  .home-content p {
-    font-size: 18px;
-  }
-
-  .about {
-    grid-template-columns: 1fr 1fr; /* Two columns layout */
-  }
-
-  .about-img img {
-    width: 100%;
-    height: auto;
-    margin-left: 0;
-  }
-
-  .portfolio-content {
-    margin-left: 0;
-  }
-
-  .container, .container1, .container3, .container4 {
-    padding: 60px;
-    margin-left: 0;
+  .home-content {
+    padding: 0 10px;
   }
 }
-
