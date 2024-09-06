@@ -10,6 +10,7 @@ body{
   background: #011f3dec;
 }
 
+
 .header{
   position: fixed;
   top: 0;
@@ -839,6 +840,131 @@ section{
   100% {
     opacity: 1;
     transform: translateY(0); /* End at the original position */
+  }
+}
+/* Mobile View (up to 767px) */
+@media (max-width: 767px) {
+  .header {
+    padding: 10px;
+  }
+  
+  .logo {
+    font-size: 20px;
+  }
+  
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar a {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+
+  .home {
+    padding: 70px 5%;
+    background-size: cover;
+  }
+
+  .profile-image {
+    width: 300px; /* Adjusted size for mobile */
+    height: 300px;
+    margin-right: 0;
+    float: none;
+  }
+
+  .home-content h1 {
+    font-size: 36px;
+  }
+
+  .home-content p {
+    font-size: 18px;
+  }
+
+  .about {
+    grid-template-columns: 1fr; /* Stack images and text vertically */
+    gap: 1rem;
+  }
+
+  .about-img img {
+    width: 100%; /* Full width for mobile */
+    height: auto;
+    margin-left: 0;
+  }
+
+  .portfolio-content {
+    margin-left: 0;
+  }
+
+  .container, .container1, .container3, .container4 {
+    padding: 30px; /* Reduce padding for mobile */
+    margin-left: 0;
+  }
+
+  .radial-bar {
+    width: 120px;
+    height: 120px;
+  }
+
+  .progress-line span {
+    height: 5px;
+  }
+
+  .contact-links {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Laptop View (between 768px and 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header {
+    padding: 15px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .navbar a {
+    font-size: 22px;
+  }
+
+  .home {
+    padding: 70px 7%;
+  }
+
+  .profile-image {
+    width: 400px; /* Adjusted size for tablets and smaller laptops */
+    height: 400px;
+  }
+
+  .home-content h1 {
+    font-size: 46px;
+  }
+
+  .home-content p {
+    font-size: 18px;
+  }
+
+  .about {
+    grid-template-columns: 1fr 1fr; /* Two columns layout */
+  }
+
+  .about-img img {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .portfolio-content {
+    margin-left: 0;
+  }
+
+  .container, .container1, .container3, .container4 {
+    padding: 60px;
+    margin-left: 0;
   }
 }
 
