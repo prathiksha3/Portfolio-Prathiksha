@@ -617,7 +617,7 @@ section{
   justify-content: center; /* Center the grid items horizontally */
   gap: 30px; /* Add some space between grid items */
   width: 100%;
-  margin-left: 400px;
+  margin-left: 200px;
 }
 .row{
   position: relative;
@@ -688,8 +688,8 @@ section{
   font-size: 20px;
   line-height: 1.4;
   margin-bottom: 4rem;
-  margin-top: 200px;
-  margin-left: 600px;
+  margin-top: 400px;
+  margin-left: 200px;
   transition: transform 0.5s;
 }
 .container3:hover{
@@ -784,7 +784,7 @@ section{
   line-height: 1.4;
   margin-bottom: 4rem;
   margin-top: 100px;
-  margin-left: 800px;
+  margin-left: 400px;
   transition: transform 0.5s;
 }
 .container4:hover{
@@ -845,52 +845,42 @@ section{
 
 /* Mobile View (up to 767px) */
 @media (max-width: 767px) {
-  body {
-    font-size: 16px; /* Adjust font size for readability on small screens */
-  }
-
   .header {
     padding: 10px;
-    text-align: center;
   }
   
   .logo {
     font-size: 20px;
-    margin-bottom: 10px;
   }
   
   .navbar {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .navbar a {
-    font-size: 18px;
+    font-size: 20px;
     margin: 10px 0;
   }
 
   .home {
     padding: 70px 5%;
     background-size: cover;
-    text-align: center;
   }
 
   .profile-image {
-    width: 100%;
-    height: auto;
-    max-width: 300px; /* Limit size to fit mobile screens */
-    margin: 0 auto;
-    display: block;
+    width: 300px; /* Adjusted size for mobile */
+    height: 300px;
+    margin-right: 0;
+    float: none;
   }
 
   .home-content h1 {
-    font-size: 28px; /* Adjusted for readability */
-    margin: 10px 0;
+    font-size: 36px;
   }
 
   .home-content p {
-    font-size: 16px; /* Adjusted for readability */
-    margin: 0 10px;
+    font-size: 18px;
   }
 
   .about {
@@ -901,7 +891,7 @@ section{
   .about-img img {
     width: 100%; /* Full width for mobile */
     height: auto;
-    margin: 0;
+    margin-left: 0;
   }
 
   .portfolio-content {
@@ -909,34 +899,72 @@ section{
   }
 
   .container, .container1, .container3, .container4 {
-    padding: 20px; /* Reduced padding for mobile */
-    margin: 0;
+    padding: 30px; /* Reduce padding for mobile */
+    margin-left: 0;
   }
 
   .radial-bar {
-    width: 100px; /* Adjusted size for mobile */
-    height: 100px;
+    width: 120px;
+    height: 120px;
   }
 
   .progress-line span {
-    height: 4px;
+    height: 5px;
   }
 
   .contact-links {
     flex-direction: column;
     align-items: center;
   }
+}
 
-  .contact-links a {
-    margin: 5px 0;
+/* Laptop View (between 768px and 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header {
+    padding: 15px;
   }
 
-  /* Additional adjustments */
-  .about-img {
-    margin: 0 auto;
+  .logo {
+    font-size: 22px;
   }
 
-  .home-content {
-    padding: 0 10px;
+  .navbar a {
+    font-size: 22px;
+  }
+
+  .home {
+    padding: 70px 7%;
+  }
+
+  .profile-image {
+    width: 400px; /* Adjusted size for tablets and smaller laptops */
+    height: 400px;
+  }
+
+  .home-content h1 {
+    font-size: 46px;
+  }
+
+  .home-content p {
+    font-size: 18px;
+  }
+
+  .about {
+    grid-template-columns: 1fr 1fr; /* Two columns layout */
+  }
+
+  .about-img img {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .portfolio-content {
+    margin-left: 0;
+  }
+
+  .container, .container1, .container3, .container4 {
+    padding: 60px;
+    margin-left: 0;
   }
 }
