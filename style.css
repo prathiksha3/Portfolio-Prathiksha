@@ -860,132 +860,156 @@ section{
 }
 
 /* Mobile View (up to 767px) */
-@media (max-width: 767px) {
-  .header {
-    padding: 10px;
+/* Mobile view */
+@media (max-width: 768px) {
+  section {
+    margin-bottom: 50px; /* Smaller gap for mobile screens */
   }
-  
+  .header {
+    padding: 10px 5px;
+  }
+
   .logo {
     font-size: 20px;
   }
-  
+
   .navbar {
     flex-direction: column;
-    align-items: flex-start;
+    font-size: 20px;
   }
 
   .navbar a {
-    font-size: 20px;
     margin: 10px 0;
+    font-size: 12px; /* Reduce size of navbar items */
   }
 
-  .home {
-    padding: 70px 5%;
-    background-size: cover;
-  }
-
-  .profile-image {
-    width: 300px; /* Adjusted size for mobile */
-    height: 300px;
-    margin-right: 0;
-    float: none;
+  .home-content {
+    padding-top: 100px; /* Adjust padding */
+    text-align: center; /* Center text on smaller screens */
   }
 
   .home-content h1 {
-    font-size: 36px;
+    font-size: 30px;
   }
 
   .home-content p {
-    font-size: 18px;
+    font-size: 16px;
+  }
+
+  .profile-image {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto; /* Center the image */
   }
 
   .about {
-    grid-template-columns: 1fr; /* Stack images and text vertically */
-    gap: 1rem;
+    display: block; /* Stack the elements vertically */
   }
 
   .about-img img {
-    width: 100%; /* Full width for mobile */
-    height: auto;
-    margin-left: 0;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
   }
 
-  .portfolio-content {
-    margin-left: 0;
+  .about-text h2 {
+    font-size: 40px;
   }
 
-  .container, .container1, .container3, .container4 {
-    padding: 30px; /* Reduce padding for mobile */
-    margin-left: 0;
+  .about-text p {
+    font-size: 16px;
+  }
+
+  .services-list {
+    grid-template-columns: 1fr; /* Stack services vertically */
+  }
+
+  .progress-line {
+    width: 100%; /* Make progress bars full width */
   }
 
   .radial-bar {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
   }
 
-  .progress-line span {
-    height: 5px;
-  }
-
-  .contact-links {
-    flex-direction: column;
-    align-items: center;
+  .portfolio-content {
+    grid-template-columns: 1fr; /* Stack portfolio items */
   }
 }
-
-/* Laptop View (between 768px and 1024px) */
-@media (max-width: 768px) {
+/* Laptop view */
+@media (min-width: 769px) and (max-width: 1200px) {
+  section {
+    margin-bottom: 50px; /* Smaller gap for mobile screens */
+  }
   .header {
-    padding: 15px;
+    padding: 15px 10px;
   }
 
-  .logo {
-    font-size: 22px;
+  .navbar {
+    font-size: 20px;
   }
-
-  .navbar a {
-    font-size: 22px;
-    margin: 0 10px;
-  }
-
-  .home {
-    padding: 70px 7%;
-  }
-
-  .profile-image {
-    width: 400px; /* Adjusted size for tablets and smaller laptops */
-    height: 400px;
-  }
-  .home-content {
-    padding-top: 100px; /* Adjust padding for smaller screens */
-}
 
   .home-content h1 {
-    font-size: 46px;
+    font-size: 35px;
   }
 
   .home-content p {
     font-size: 18px;
   }
 
-  .about {
-    grid-template-columns: 1fr 1fr; /* Two columns layout */
+  .profile-image {
+    width: 300px;
+    height: 300px;
   }
 
-  .about-img img {
-    width: 100%;
-    height: auto;
-    margin-left: 0;
+  .about-text h2 {
+    font-size: 50px;
+  }
+
+  .about-text p {
+    font-size: 18px;
+  }
+
+  .services-list {
+    grid-template-columns: repeat(2, 1fr); /* Display two services per row */
   }
 
   .portfolio-content {
-    margin-left: 0;
+    grid-template-columns: repeat(2, 1fr); /* Display two portfolio items per row */
+  }
+}
+/* Desktop view */
+@media (min-width: 1201px) {
+  section {
+    margin-bottom: 50px; /* Smaller gap for mobile screens */
+  }
+  .home-content h1 {
+    font-size: 50px;
   }
 
-  .container, .container1, .container3, .container4 {
-    padding: 60px;
-    margin-left: 0;
+  .home-content p {
+    font-size: 22px;
   }
-  
+
+  .profile-image {
+    width: 400px;
+    height: 400px;
+  }
+
+  .about-text h2 {
+    font-size: 60px;
+  }
+
+  .about-text p {
+    font-size: 20px;
+  }
+
+  .services-list {
+    grid-template-columns: repeat(3, 1fr); /* Display three services per row */
+  }
+
+  .portfolio-content {
+    grid-template-columns: repeat(3, 1fr); /* Display three portfolio items per row */
+  }
 }
