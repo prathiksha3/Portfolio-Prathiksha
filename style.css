@@ -217,6 +217,8 @@ body{
 }
 .container{
   padding: 90px;
+  align-items: center;
+  justify-content: center;
 }
 .cont{
   padding: 90px;
@@ -228,11 +230,16 @@ body{
   margin-top: 50px;
 }
 .services-list div{
+  align-items: center;
+  justify-content: center;
+  width: auto;
   background-color: transparent;
   padding: 40px;
   font-size: auto;
   font-weight: auto;
   border-radius: 20px;
+  margin-left: 00px;
+  
   transition: background 0.5s, transform 0.5s;
   box-shadow: 1px 1px 20px #012290f7,
   1px 1px 40px #0053b8f7
@@ -253,6 +260,73 @@ body{
   font-size: 15px;
 }
 .services-list div a{
+  text-decoration: none;
+  color: #000000;
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+}
+#services5{
+  color: aliceblue;
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 4rem;
+}
+.sub-title5{
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 70px;
+  color: white;
+}
+.sub-title5 span{
+  color: #0ef;
+}
+.container5{
+  padding: 90px;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-list5{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
+  grid-gap:40px;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 200px;
+}
+.services-list5 div{
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: transparent;
+  padding: 40px;
+  font-size: auto;
+  font-weight: auto;
+  border-radius: 20px;
+  margin-left:100px;
+  margin-right: 200px;
+  
+  transition: background 0.5s, transform 0.5s;
+  box-shadow: 1px 1px 20px #012290f7,
+  1px 1px 40px #0053b8f7
+}
+.services-list5 div i{
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.services-list5 div h2{
+  font-size: 20px;
+  font-weight: auto;
+  margin-bottom: 15px;
+}
+.services-list5 div h4{
+  font-size: 20px;
+}
+.services-list5 div p{
+  font-size: 15px;
+}
+.services-list5 div a{
   text-decoration: none;
   color: #000000;
   font-size: 12px;
@@ -862,9 +936,6 @@ section{
 /* Mobile View (up to 767px) */
 /* Mobile view */
 @media (max-width: 768px) {
-  section {
-    margin-bottom: 50px; /* Smaller gap for mobile screens */
-  }
   .header {
     padding: 10px 5px;
   }
@@ -939,9 +1010,6 @@ section{
 }
 /* Laptop view */
 @media (min-width: 769px) and (max-width: 1200px) {
-  section {
-    margin-bottom: 50px; /* Smaller gap for mobile screens */
-  }
   .header {
     padding: 15px 10px;
   }
@@ -981,9 +1049,6 @@ section{
 }
 /* Desktop view */
 @media (min-width: 1201px) {
-  section {
-    margin-bottom: 50px; /* Smaller gap for mobile screens */
-  }
   .home-content h1 {
     font-size: 50px;
   }
