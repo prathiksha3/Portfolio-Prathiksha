@@ -695,8 +695,9 @@ section{
   line-height: 1.4;
   margin-bottom: 4rem;
   margin-top: 300px;
-  margin-left: 500px;
+  margin-left: 300px;
   transition: transform 0.5s;
+  
 }
 .container3:hover{
   transform: scale(1.1);
@@ -769,14 +770,14 @@ section{
     transform: translateY(0);
   }
 }
-#contact {
+.contact {
   padding: 60px 20px;
   text-align: center;
   animation: slideUp 1.2s ease-in-out;
   transition: transform 0.5s ease, box-shadow 0.5s ease, opacity 0.5s ease;
 }
 
-#contact:hover {
+.contact:hover {
   transform: scale(1.05); /* Slightly increase size on hover */
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Add shadow effect */
   opacity: 0.9; /* Reduce opacity slightly on hover */
