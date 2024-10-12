@@ -37,7 +37,8 @@ body{
   display: flex;
   justify-content: center; /* Center the items horizontally */
   align-items: center; /* Center the items vertically */
-  width: 100%; /* Make sure the navbar spans the full width of the header */
+  width: 100%; 
+  font-size: 25px/* Make sure the navbar spans the full width of the header */
 }
 
 .navbar a {
@@ -111,8 +112,8 @@ body{
 
 .profile-image {
   
-  width: 600px; /* Increased size */
-  height: 600px;
+  width: 300px; /* Increased size */
+  height: 300px;
   border-radius: 50%;
   border: 3px solid #333;
   object-fit: cover;
@@ -220,6 +221,9 @@ body{
 .container{
   padding: 90px;
 }
+.cont{
+  padding: 90px;
+}
 .services-list{
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
@@ -229,8 +233,8 @@ body{
 .services-list div{
   background-color: transparent;
   padding: 40px;
-  font-size: 25px;
-  font-weight: 13px;
+  font-size: auto;
+  font-weight: auto;
   border-radius: 20px;
   transition: background 0.5s, transform 0.5s;
   box-shadow: 1px 1px 20px #012290f7,
@@ -241,8 +245,8 @@ body{
   margin-bottom: 30px;
 }
 .services-list div h2{
-  font-size: 30px;
-  font-weight: 500;
+  font-size: auto;
+  font-weight: auto;
   margin-bottom: 15px;
 }
 .services-list div a{
@@ -619,7 +623,7 @@ section{
   justify-content: center; /* Center the grid items horizontally */
   gap: 30px; /* Add some space between grid items */
   width: 100%;
-  margin-left: 400px;
+  margin-left: auto;
 }
 .row{
   position: relative;
@@ -786,7 +790,7 @@ section{
   line-height: 1.4;
   margin-bottom: 4rem;
   margin-top: 100px;
-  margin-left: 800px;
+  margin-left: 600px;
   transition: transform 0.5s;
 }
 .container4:hover{
